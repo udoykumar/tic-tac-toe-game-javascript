@@ -8,8 +8,13 @@
     <title>Tic Tac Toe game</title>
 </head>
 
-<body class="bg-[#2a9d8f]">
-    <main class="h-[70vh] flex justify-center items-center flex-col gap-5">
+<body class="bg-[#2a9d8f] h-screen">
+    <div class="msg-continer text-center h-full flex justify-center items-center flex-col gap-9 hidden">
+        <p id="msg" class="text-4xl text-white p-5 font-bold"></p>
+        <button id="newGameBtn" class="py-2 px-9 bg-white text-blue-600 rounded-lg text-xl cursor-pointer my-3">New
+            Game</button>
+    </div>
+    <main id="main" class="h-full flex justify-center items-center flex-col gap-5">
         <h1 class="text-4xl text-white font-bold">Tic Tac Toe Game</h1>
         <div class="h-[60vmin] w-[60vmin] flex flex-wrap gap-5 items-center">
             <button
